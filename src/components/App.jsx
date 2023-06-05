@@ -1,16 +1,19 @@
-export const App = () => {
+import { Toaster } from 'react-hot-toast';
+import { ContactForm } from './ContactForm/ContactForm';
+import { ContactsList } from './contactsList/ContactsList';
+import { Filter } from './filter/Filter';
+
+import css from './APP.module.css';
+
+export function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={css.wraper}>
+      <h1>Phonebook</h1>
+      <ContactForm />
+      <Filter />
+      <h2>Contacts</h2>
+      <ContactsList />
+      <Toaster />
     </div>
   );
-};
+}
