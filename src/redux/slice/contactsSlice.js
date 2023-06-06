@@ -37,7 +37,7 @@ const contactsSlice = createSlice({
 const persistConfig = {
   key: 'contacts',
   storage,
-  whitelist: ['contacts'],
+   whitelist: ['contacts'],
 };
 
 export const persistedContactsReducer = persistReducer(

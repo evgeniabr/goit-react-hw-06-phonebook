@@ -12,7 +12,7 @@ export function Filter() {
       <input
         type="text"
         name="filter"
-        value={filterValue}
+         value={filterValue}
         onChange={event => dispatch(updateFilter(event.target.value))}
       />
     </div>
